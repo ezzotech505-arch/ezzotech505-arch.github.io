@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,51 +25,56 @@
 
   <main class="container">
     <div class="doc-content">
-      <h1>プライバシーポリシー - Ezzo DevLens</h1>
+      <h1>Privacy Policy for Ezzo DevLens</h1>
       <div class="doc-meta">
-        <span>対象アプリ: Ezzo DevLens (com.ezzodevlens)</span> | 
-        <span>最終更新日: 2026年10月26日</span>
+        <span>Target App: Ezzo DevLens (<code>com.ezzodevlens</code>)</span> | 
+        <span>Last updated: October 2026</span>
       </div>
 
       <p>
-        Ezzo Tech（以下「当開発者」）は、提供するAndroidアプリ「Ezzo DevLens」（以下「本アプリ」）における利用者情報の取り扱いについて、以下の通りプライバシーポリシーを定めます。
+        Ezzo Tech ("we", "our", or "the developer") is committed to protecting your privacy. This Privacy Policy explains our data collection and handling practices for the Android application "Ezzo DevLens" (the "Service").
       </p>
 
-      <h2>1. 収集する情報とその利用目的</h2>
+      <h2>1. Information Handling &amp; Local Processing</h2>
       <p>
-        本アプリは開発者向け診断・端末解析ツールであり、<strong>端末外部への個人情報送信は一切行いません</strong>。
+        Ezzo DevLens is designed as a standalone diagnostic utility. <strong>We do not collect, transmit, or store your personal information on external servers</strong>.
       </p>
       <ul>
-        <li><strong>端末仕様・OS情報</strong>: 画面仕様（DP/DPI/解像度）、SoC情報、Androidバージョン、対応ABIなどを端末内部で取得し画面に表示します。これらの情報は端末外部のサーバーに送信・蓄積されることはありません。</li>
-        <li><strong>ネットワーク診断情報</strong>: ユーザーが指定したホストに対するPing、DNS解決、TLS証明書取得、HTTPレスポンス測定を行います。測定結果はローカル画面での表示およびクリップボードへの一時コピーのみに利用されます。</li>
-        <li><strong>インストール済みアプリ一覧</strong>: クエリ対象の公開Intent対応アプリ（ブラウザ、ストアなど）を端末内で検索・表示します。アプリ一覧データを収集・送信することはありません。</li>
+        <li><strong>Hardware &amp; OS Data</strong>: Display metrics (DP/DPI/resolution), chipset specifications, OS build info, and battery status are retrieved locally using standard Android APIs and displayed strictly on your screen. This information is never sent to any external server.</li>
+        <li><strong>Network Diagnostic Data</strong>: When you initiate diagnostic checks (Ping, DNS lookup, TLS handshake, HTTP status), requests are sent directly from your device to the target domain or IP you specify. Diagnostic outputs are stored only in memory for display or temporary clipboard copying.</li>
+        <li><strong>Installed Package Query</strong>: Queried app package information (such as package names and version codes) is inspected locally on the device to assist with debugging. This list is never transmitted or uploaded.</li>
       </ul>
 
-      <h2>2. 広告およびサードパーティSDK</h2>
+      <h2>2. Third-Party Services &amp; In-App Purchases</h2>
       <p>
-        本アプリの基本機能において、ユーザーを追跡（トラッキング）する広告識別子（GAID）やトラッキングSDKは一切組み込まれておりません。
+        Ezzo DevLens does not embed third-party tracking SDKs or ad networks in its core functionality.
       </p>
       <p>
-        アプリ内課金（PROプラン）をご利用の際は、Google Play Billing Libraryを介してGoogle社による安全な決済処理が行われます。当開発者がユーザーのクレジットカード情報等を保持・取得することはありません。
+        If you choose to purchase the Pro version, financial transactions are handled securely and directly by the Google Play Store via Google Play Billing. Ezzo Tech does not have access to or store your payment details.
       </p>
 
-      <h2>3. 権限（パーミッション）の利用</h2>
+      <h2>3. Device Permissions</h2>
       <ul>
-        <li><code>INTERNET</code>: ユーザー自身が明示的に実行するネットワーク診断（Ping/DNS/TLS/HTTPチェック）およびGoogle Play課金検証のために使用します。</li>
-        <li><code>ACCESS_NETWORK_STATE</code>: 現在のWi-Fi/モバイル通信の接続状況を判定するために使用します。</li>
+        <li><code>INTERNET</code>: Used exclusively to execute network tests (Ping/DNS/TLS/HTTP diagnostic checks) that you explicitly trigger, and to verify Google Play license status.</li>
+        <li><code>ACCESS_NETWORK_STATE</code>: Used to determine whether the device is connected to Wi-Fi or mobile data to provide contextual network diagnostics.</li>
       </ul>
 
-      <h2>4. お問い合わせ先</h2>
+      <h2>4. Changes to This Privacy Policy</h2>
       <p>
-        本ポリシーまたは本アプリに関するご質問・ご要望は、下記メールアドレスまでお問い合わせください。
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.
+      </p>
+
+      <h2>5. Contact Us</h2>
+      <p>
+        If you have any questions or feedback regarding this Privacy Policy, please contact us at:
       </p>
       <p>
-        <strong>Ezzo Tech サポート窓口</strong><br>
-        メール: <a href="mailto:ezzotech505@gmail.com">ezzotech505@gmail.com</a>
+        <strong>Ezzo Tech Support</strong><br>
+        Email: <a href="mailto:ezzotech505@gmail.com">ezzotech505@gmail.com</a>
       </p>
 
       <div style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
-        <a href="../../../">&larr; Ezzo Tech トップページに戻る</a>
+        <a href="../../../">&larr; Back to Ezzo Tech Home</a>
       </div>
     </div>
   </main>
