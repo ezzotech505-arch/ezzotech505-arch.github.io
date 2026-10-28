@@ -51,7 +51,7 @@ a:hover {
 /* Header */
 header {
   border-bottom: 1px solid var(--border-color);
-  background: rgba(11, 15, 25, 0.8);
+  background: rgba(11, 15, 25, 0.85);
   backdrop-filter: blur(12px);
   position: sticky;
   top: 0;
@@ -66,8 +66,8 @@ header {
 }
 
 .brand-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 800;
   color: #fff;
   display: flex;
   align-items: center;
@@ -75,14 +75,9 @@ header {
   letter-spacing: -0.02em;
 }
 
-.brand-badge {
-  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
-  color: #0b0f19;
-  font-size: 0.7rem;
-  font-weight: 800;
-  padding: 0.15rem 0.45rem;
-  border-radius: 4px;
-  text-transform: uppercase;
+.brand-logo:hover {
+  text-decoration: none;
+  opacity: 0.9;
 }
 
 .nav-links {
@@ -208,7 +203,9 @@ header {
 .apps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .app-card {
@@ -230,28 +227,36 @@ header {
 .app-card-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .app-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 12px;
-  background: #1f2937;
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  background: #111827;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--accent-cyan);
+  overflow: hidden;
   border: 1px solid var(--border-light);
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.app-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .app-card-title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 0.2rem;
 }
 
 .app-card-category {
@@ -266,6 +271,7 @@ header {
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
   flex-grow: 1;
+  line-height: 1.65;
 }
 
 .app-tags {
